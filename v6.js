@@ -46,6 +46,7 @@ imageUpload.addEventListener('change', (event) => {
         };
         reader.readAsDataURL(file);
         codeButton.disabled = false;
+        cutAssetsButton.disabled = true;
     } else {
        imageContainer.innerHTML = "";
        codeButton.disabled = true;
