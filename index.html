@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gemini 1.5 Pro UI to Code</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Gemini 1.5 Pro, UI to Code</h1>
         <p>Made with ❤️ by <a href="https://x.com/skirano" target="_blank">Skirano</a></p>
 
+        <div class="api-key-input">
+            <label for="apiKey">API Key:</label>
+            <input type="text" id="apiKey" placeholder="Enter your API key">
+        </div>
+
         <input type="file" id="imageUpload" accept="image/*">
         <button id="codeButton" disabled>Code UI</button>
 
         <div id="imageContainer" class="image-container"></div>
-
-
-        <div id="descriptionContainer" class="response-container">
+          <div id="descriptionContainer" class="response-container">
           <h2>Initial Description</h2>
            <pre id="initialDescription"></pre>
         </div>
@@ -41,8 +44,7 @@
       <div id="loading" style="display: none;">
         <p>Loading...</p>
         </div>
-
-        <div id="errorContainer" style="display: none; color: red;"></div>
+      <div id="errorContainer" style="display: none; color: red;"></div>
          <div id="successContainer" style="display: none; color: green;"></div>
     </div>
     <script src="script.js"></script>
