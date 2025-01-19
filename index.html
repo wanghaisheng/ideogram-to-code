@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Gemini 1.5 Pro, UI to Code</h1>
-        <p>Made with ❤️ by <a href="https://x.com/skirano" target="_blank">Skirano</a></p>
+        <h1>Gemini 1.5 Pro UI to Code</h1>
+        <p>Made with ❤️ by <a href="https://github.com/wanghaisheng" target="_blank">Heisenberg</a></p>
 
         <div class="api-key-input">
             <label for="apiKey">API Key:</label>
@@ -19,6 +19,7 @@
 
         <input type="file" id="imageUpload" accept="image/*">
         <button id="codeButton" disabled>Code UI</button>
+         <button id="cutAssetsButton" disabled>Cut Assets</button>
 
         <div id="imageContainer" class="image-container"></div>
         <div id="descriptionContainer" class="response-container">
@@ -32,9 +33,15 @@
         </div>
 
         <div id="htmlContainer" class="response-container">
-          <h2>Generated HTML:</h2>
+          <h2>Generated HTML (Placeholder Images):</h2>
             <pre id="initialHtml"></pre>
         </div>
+
+          <div id="htmlWithPathsContainer" class="response-container">
+          <h2>Generated HTML (Cropped Images):</h2>
+            <pre id="htmlWithPaths"></pre>
+        </div>
+
 
         <div id="refinedHtmlContainer" class="response-container">
              <h2>Refined HTML:</h2>
@@ -47,7 +54,8 @@
         </div>
 
         <div id="errorContainer" style="display: none; color: red;"></div>
-        <div id="successContainer" style="display: none; color: green;"></div>
+         <div id="successContainer" style="display: none; color: green;"></div>
+          <div id="assetContainer" class="image-container"></div>
     </div>
     <script src="script.js"></script>
 </body>
