@@ -11,6 +11,10 @@ how to choose right and best model to describe image , see https://mbzuai-oryx.g
 
 >We find that gpt-4o performs the best for Midscene at this moment. The other known supported models are claude-3-opus-20240229, gemini-1.5-pro, qwen-vl-max-latest, doubao-vision-pro-32k  https://midscenejs.com/model-provider.html
 
+tips:
+
+https://midscenejs.com/prompting-tips.html
+
 
 
 Okay, let's clarify what you would get when you click the "Code UI" button in the current version of the JavaScript code.
