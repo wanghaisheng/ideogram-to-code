@@ -7,6 +7,8 @@ from ideogram ui interface image to code
 i am sucked at this process
 
 
+how to choose right and best model to describe image , see https://mbzuai-oryx.github.io/LlamaV-o1/
+
 
 
 Okay, let's clarify what you would get when you click the "Code UI" button in the current version of the JavaScript code.
