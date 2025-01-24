@@ -1,6 +1,9 @@
 # from design to code
 
 
+根据 图片分析的json 可以用来评估图生代码工具的准确性 一方面是布局，一方面是配色
+
+
 from ideogram ui interface image to code
 
 
